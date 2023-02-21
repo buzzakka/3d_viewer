@@ -2,8 +2,9 @@
 #define VIEWER_3D_H
 
 #include <stdio.h>
-#include <regex.h>
+#include <stdlib.h>
 #include <string.h>
+#include <regex.h>
 
 #define MAX_STR_LENGTH 500
 
@@ -26,6 +27,9 @@ typedef struct data {
 
 int check_obj(char *file_name, data *viewer_struct);
 int regex_compiler(char *pattern, regex_t *re);
+
+void make_matrix(data *viewer_struct);
+void destroy_matrix(data *viewer_struct);
 
 
 #endif  // VIEWER_3D_H
