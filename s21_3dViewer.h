@@ -36,6 +36,10 @@ int regex_compiler(char *pattern, regex_t *re);
 
 void make_matrix(data *viewer_struct);
 void destroy_matrix(data *viewer_struct);
+void make_facets_arr(data *viewer_struct);
+void add_facets_to_arr(polygon_t *facet, char *str);
+int s21_viewer(char *file_name, data *viewer_struct);
+// void print_struct(data *viewer_struct);
 
 
 #endif  // VIEWER_3D_H
